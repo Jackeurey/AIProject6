@@ -49,11 +49,11 @@ def writeData(mat): #Takes a matrix and writes its contents to a file, with subj
 
 	#prints all the information to file with proper formating and 4 leading zeros
 	for i in range(0,n):
-		data.write(str.format('{0:.4f}', mat[i][0]) + ", ")
-		data.write(str.format('{0:.4f}', mat[i][1]) + ", ")
-		data.write(str.format('{0:.4f}', mat[i][2]) + ", ")
-		data.write(str.format('{0:.4f}', mat[i][3]) + ", ")
-		data.write(str.format('{0:.4f}', mat[i][4]) + "  ")
+		data.write(str.format('{0:.4f}', mat[i][0]) + " ")
+		data.write(str.format('{0:.4f}', mat[i][1]) + " ")
+		data.write(str.format('{0:.4f}', mat[i][2]) + " ")
+		data.write(str.format('{0:.4f}', mat[i][3]) + " ")
+		data.write(str.format('{0:.4f}', mat[i][4]) + " ")
 		if(i % 9 == 0): #This always runs on the first loop. I could have skiped the single always run if statement but I felt this was more readable
 			subject += 1
 		label = getBits(subject) #returns binary string of subject
